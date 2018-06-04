@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dangerous dungeon</title>
+    <link rel="stylesheet" href="style/index.css">
+  </head>
+  <body>
+    <header class="active" id="header">
+      <h1>Dangerous dungeon</h1>
+    </header>
+    <main class="active">
+      <section class="menue-container active" id="MenueContainer">
+        <article class="preview-menue active" id="previewMenue">
+          <p>Привет друг,тебе предстоит сражение с монстрами.Ты готов?</p>
+          <input type="button" value="Да" id="goToMainMenue">
+        </article>
+        <article class="main-menue unactive">
+          <h2 class="main-menue-header">Создай своего персонажа</h2>
+          <div class="main-menue-main">
+            <ul class="main-menue-sidebar-1">
+              <li>Раса</li>
+              <li>
+                <input type="radio" name="heroRace" value="Human" id="radioHumanRace" checked>
+                <label for="radioHumanRace">Человек</label>
+              </li>
+              <li>
+                <input type="radio" name="heroRace" value="Elf" id="radioElfRace">
+                <label for="radioElfRace">Эльф</label>
+              </li>
+            </ul>
+            <div class="main-menue-content">
+              <img src="" alt="" class="img-hero" id="heroImg">
+              <input type="text" value="" id="nameOfHero" maxlength = "8" placeholder="От 5 до 8 символов">
+              <label for="nameOfHero">Как его будут звать?</label>
+            </div>
+            <ul class="main-menue-sidebar-2">
+              <li>Пол</li>
+              <li>
+                <input type="radio" name="heroGender" value="Male" id="radioGenderMale" checked>
+                <label for="radioGenderMale">Мужчина</label>
+              </li>
+              <li>
+                <input type="radio" name="heroGender" value="Female" id="radioGenderFemale">
+                <label for="radioGenderFemale">Женщина</label>
+              </li>
+            </ul>
+          </div>
+          <div class="main-menue-footer">
+            <input type="button" value="Готов к приключениям" id="starGame">
+          </div>
+        </article>
+      </section>
+      <section class="Game-field-container unactive" id="GameFieldContainer">
+        <div class="heroStatusBar-container">
+          <img src="" alt="" id="characterIcon" class="character-icon">
+          <ul>
+            <li class="character-name" id="characterName"></li>
+            <li class="character-hp" id="characterHp"><div class="hp-line-hero" id="hpLineHero"></div></li>
+            <li class="character-score" id="characterScore"></li>
+          </ul>
+        </div>
+        <div class="monsterStatusBar-container active">
+          <ul>
+            <li class="monster-name" id="monsterName"></li>
+            <li class="monster-hp" id="monsterHp"><div class="hp-line-monster" id="hpLineMonster"></div></li>
+          </ul>
+          <img src="" alt="" id="monsterIcon" class="monster-icon">
+        </div>
+        <canvas id="GameField" class="Game-field"></canvas>
+      </section>
+    </main>
+    <script type="text/javascript" src="script/index.js"></script>
+    <script type="text/javascript" src="script/hero/Hero.js"></script>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  list-style-type: none;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/body-patern.jpg);
+}
+header{
+  height: 15%;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menue-container{
+  color: white;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(1,1,1,0.5)
+}
+.preview-menue{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.main-menue{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.main-menue-header{
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.main-menue-main{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.main-menue-sidebar-1{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-menue-content{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-menue-sidebar-2{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-menue-footer{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-hero{
+  width: 100px;
+  height: 200px;
+}
+.Game-field-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroStatusBar-container{
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+}
+.character-icon{
+  width: 100px;
+  height: 100px;
+}
+.heroStatusBar-container ul {
+  position: relative;
+}
+.character-hp{
+  height: 20px;
+  width: 200px;
+  background: red;
+  transition: 1s width;
+  position: relative;
+}
+.hp-line-hero{
+  border: 2px solid black;
+  height: 20px;
+  text-align: center;
+  width: 200px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+}
+.character-score{
+  position: absolute;
+  bottom: 0;
+}
+.monsterStatusBar-container{
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.monsterStatusBar-container ul{
+  position: relative;
+}
+.monster-icon{
+  width: 100px;
+  height: 100px;
+}
+.monster-name{
+  display: flex;
+  justify-content: flex-end;
+}
+.hp-line-monster{
+  border: 2px solid black;
+  height: 20px;
+  text-align: center;
+  width: 200px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+}
+.monster-hp{
+  height: 20px;
+  width: 200px;
+  background: red;
+  transition: 1s width;
+  position: relative;
+}
+.Game-field{
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background: green;
+}
+.active{
+  display: flex;
+}
+.unactive{
+  display: none;
+}
